@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playback Speed"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decreaseSpeedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/speedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0x"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/increaseSpeedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Background Color"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save" />
+
+</LinearLayout>
